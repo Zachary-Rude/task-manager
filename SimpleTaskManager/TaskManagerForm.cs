@@ -77,12 +77,7 @@ namespace SimpleTaskManager
 
         private void endTaskToolStripMenuItem_Click(object sender, EventArgs e) // dừng một tiến trình bằng cách sử dụng button trên giao diện
         {
-            if (listView.SelectedItems.Count > 0)
-            {
-                getSelectedProcess().Kill();
-            }
-            GetProcess();
-            changeColor();
+            endTaskButton.PerformClick();
         }
 
         private void idleToolStripMenuItem_Click(object sender, EventArgs e) // đặt lại mức độ ưu tiên cho các tiếm trình với các mức idle/ normal/ high/ realtime
@@ -121,7 +116,14 @@ namespace SimpleTaskManager
         {
             if (listView.SelectedItems.Count > 0)
             {
-                getSelectedProcess().Kill();
+                try
+                {
+                    getSelectedProcess().Kill();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Cannot kill process", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             GetProcess();
         }
@@ -135,17 +137,6 @@ namespace SimpleTaskManager
         {
             listView.ListViewItemSorter = new ListViewItemComparer(e.Column);
             listView.Sort();
-        }
-
-        private void runNewTaskToolStripMenuItem_Click(object sender, EventArgs e) // mở của sổ chạy một ứng dụng mới
-        {
-            using (RunNewTaskForm runNewTaskForm = new RunNewTaskForm())
-            {
-                if (runNewTaskForm.ShowDialog() == DialogResult.OK)
-                {
-                    GetProcess();
-                }
-            }
         }
 
         private void performanceToolStripMenuItem_Click(object sender, EventArgs e) // mở cửa sổ biểu diễn hiệu suất hệ thống: CPU, RAM
@@ -163,6 +154,32 @@ namespace SimpleTaskManager
         private void enableColorchangingToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
             GetProcess();
+        }
+
+        private void runNewProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            runNewTaskToolStripMenuItem.PerformClick();
+        }
+
+        private void performanceToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            performanceToolStripMenuItem.PerformClick();
+        }
+
+        private void runNewTaskToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            using (RunNewTaskForm runNewTaskForm = new RunNewTaskForm())
+            {
+                if (runNewTaskForm.ShowDialog() == DialogResult.OK)
+                {
+                    GetProcess();
+                }
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            endTaskButton.PerformClick();
         }
     }
 }
