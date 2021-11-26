@@ -11,11 +11,12 @@
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_TaskManager.pdb" Value="Task Manager.pdb"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="icon.exe" Type="8"/>
     <ROW Property="Manufacturer" Value="Zach, Inc."/>
     <ROW Property="ProductCode" Value="1033:{F651F2DB-9CBC-414D-903F-D07CA7F90F0A} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Task Manager"/>
-    <ROW Property="ProductVersion" Value="1.0.7" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.0.8" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{9EC7DBCA-8070-4D1F-8C61-F097BD42FF67}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -137,6 +138,9 @@
     <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
     <ROW Feature_="MainFeature" Component_="SimpleTaskManager_SymbolsOutput"/>
     <ROW Feature_="MainFeature" Component_="AI_PROPPATH_FILENAME_PERBUILD_TaskManager.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="icon.exe" SourcePath="..\SimpleTaskManager\icon.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>

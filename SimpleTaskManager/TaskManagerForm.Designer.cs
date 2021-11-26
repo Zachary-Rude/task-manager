@@ -37,12 +37,14 @@
             this.Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ProcessType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rightClickMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.runNewProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.endTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setPriorityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.idleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.normalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.highToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realtimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.performanceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.endTaskButton = new System.Windows.Forms.Button();
             this.reloadButton = new System.Windows.Forms.Button();
             this.perfButton = new System.Windows.Forms.Button();
@@ -57,13 +59,11 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.processToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutTaskManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.runNewProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.performanceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rightClickMenu.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -129,6 +129,13 @@
             this.rightClickMenu.Name = "rightClickMenu";
             this.rightClickMenu.Size = new System.Drawing.Size(166, 92);
             // 
+            // runNewProcessToolStripMenuItem
+            // 
+            this.runNewProcessToolStripMenuItem.Name = "runNewProcessToolStripMenuItem";
+            this.runNewProcessToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.runNewProcessToolStripMenuItem.Text = "Run New Process";
+            this.runNewProcessToolStripMenuItem.Click += new System.EventHandler(this.runNewProcessToolStripMenuItem_Click);
+            // 
             // endTaskToolStripMenuItem
             // 
             this.endTaskToolStripMenuItem.Name = "endTaskToolStripMenuItem";
@@ -151,7 +158,7 @@
             // 
             this.idleToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.idleToolStripMenuItem.Name = "idleToolStripMenuItem";
-            this.idleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.idleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.idleToolStripMenuItem.Text = "Idle";
             this.idleToolStripMenuItem.Click += new System.EventHandler(this.idleToolStripMenuItem_Click);
             // 
@@ -159,7 +166,7 @@
             // 
             this.normalToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
-            this.normalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.normalToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.normalToolStripMenuItem.Text = "Normal";
             this.normalToolStripMenuItem.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
             // 
@@ -167,7 +174,7 @@
             // 
             this.highToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.highToolStripMenuItem.Name = "highToolStripMenuItem";
-            this.highToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.highToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.highToolStripMenuItem.Text = "High";
             this.highToolStripMenuItem.Click += new System.EventHandler(this.highToolStripMenuItem_Click);
             // 
@@ -175,9 +182,16 @@
             // 
             this.realtimeToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.realtimeToolStripMenuItem.Name = "realtimeToolStripMenuItem";
-            this.realtimeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.realtimeToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.realtimeToolStripMenuItem.Text = "Realtime";
             this.realtimeToolStripMenuItem.Click += new System.EventHandler(this.realtimeToolStripMenuItem_Click);
+            // 
+            // performanceToolStripMenuItem1
+            // 
+            this.performanceToolStripMenuItem1.Name = "performanceToolStripMenuItem1";
+            this.performanceToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.performanceToolStripMenuItem1.Text = "Performance";
+            this.performanceToolStripMenuItem1.Click += new System.EventHandler(this.performanceToolStripMenuItem1_Click);
             // 
             // endTaskButton
             // 
@@ -224,8 +238,9 @@
             this.helpToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
+            this.mainMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.mainMenu.Size = new System.Drawing.Size(764, 24);
-            this.mainMenu.TabIndex = 4;
+            this.mainMenu.TabIndex = 0;
             this.mainMenu.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
@@ -271,19 +286,19 @@
             // maximizeToolStripMenuItem
             // 
             this.maximizeToolStripMenuItem.Name = "maximizeToolStripMenuItem";
-            this.maximizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maximizeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.maximizeToolStripMenuItem.Text = "Maximize";
             // 
             // minimizeToolStripMenuItem
             // 
             this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
-            this.minimizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.minimizeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.minimizeToolStripMenuItem.Text = "Minimize";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // processToolStripMenuItem
@@ -299,9 +314,16 @@
             // 
             this.runNewTaskToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
-            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.runNewTaskToolStripMenuItem.Text = "Run New Process";
             this.runNewTaskToolStripMenuItem.Click += new System.EventHandler(this.runNewTaskToolStripMenuItem_Click_1);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.toolStripMenuItem1.Text = "End Process";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolToolStripMenuItem
             // 
@@ -334,27 +356,6 @@
             this.aboutTaskManagerToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.aboutTaskManagerToolStripMenuItem.Text = "About Task Manager";
             this.aboutTaskManagerToolStripMenuItem.Click += new System.EventHandler(this.aboutTaskManagerToolStripMenuItem_Click);
-            // 
-            // runNewProcessToolStripMenuItem
-            // 
-            this.runNewProcessToolStripMenuItem.Name = "runNewProcessToolStripMenuItem";
-            this.runNewProcessToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.runNewProcessToolStripMenuItem.Text = "Run New Process";
-            this.runNewProcessToolStripMenuItem.Click += new System.EventHandler(this.runNewProcessToolStripMenuItem_Click);
-            // 
-            // performanceToolStripMenuItem1
-            // 
-            this.performanceToolStripMenuItem1.Name = "performanceToolStripMenuItem1";
-            this.performanceToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
-            this.performanceToolStripMenuItem1.Text = "Performance";
-            this.performanceToolStripMenuItem1.Click += new System.EventHandler(this.performanceToolStripMenuItem1_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "End Process";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // TaskManagerForm
             // 
