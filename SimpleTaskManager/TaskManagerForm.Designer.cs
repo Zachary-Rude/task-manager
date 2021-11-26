@@ -47,12 +47,6 @@
             this.reloadButton = new System.Windows.Forms.Button();
             this.perfButton = new System.Windows.Forms.Button();
             this.mainMenu = new System.Windows.Forms.MenuStrip();
-            this.processToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutTaskManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +55,12 @@
             this.maximizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.processToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutTaskManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rightClickMenu.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +84,7 @@
             this.listView.Size = new System.Drawing.Size(764, 491);
             this.listView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView.TabIndex = 0;
+            this.listView.TabStop = false;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
             this.listView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
@@ -222,53 +223,6 @@
             this.mainMenu.TabIndex = 4;
             this.mainMenu.Text = "menuStrip1";
             // 
-            // processToolStripMenuItem
-            // 
-            this.processToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.runNewTaskToolStripMenuItem});
-            this.processToolStripMenuItem.Name = "processToolStripMenuItem";
-            this.processToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.processToolStripMenuItem.Text = "Process";
-            // 
-            // runNewTaskToolStripMenuItem
-            // 
-            this.runNewTaskToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
-            this.runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
-            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.runNewTaskToolStripMenuItem.Text = "Run New Process";
-            // 
-            // toolToolStripMenuItem
-            // 
-            this.toolToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
-            this.toolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.performanceToolStripMenuItem});
-            this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.toolToolStripMenuItem.Text = "Tool";
-            // 
-            // performanceToolStripMenuItem
-            // 
-            this.performanceToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
-            this.performanceToolStripMenuItem.Name = "performanceToolStripMenuItem";
-            this.performanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.performanceToolStripMenuItem.Text = "Performance";
-            this.performanceToolStripMenuItem.Click += new System.EventHandler(this.performanceToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutTaskManagerToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutTaskManagerToolStripMenuItem
-            // 
-            this.aboutTaskManagerToolStripMenuItem.Name = "aboutTaskManagerToolStripMenuItem";
-            this.aboutTaskManagerToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.aboutTaskManagerToolStripMenuItem.Text = "About Task Manager";
-            this.aboutTaskManagerToolStripMenuItem.Click += new System.EventHandler(this.aboutTaskManagerToolStripMenuItem_Click);
-            // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -280,7 +234,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // viewToolStripMenuItem
@@ -312,20 +266,67 @@
             // maximizeToolStripMenuItem
             // 
             this.maximizeToolStripMenuItem.Name = "maximizeToolStripMenuItem";
-            this.maximizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maximizeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.maximizeToolStripMenuItem.Text = "Maximize";
             // 
             // minimizeToolStripMenuItem
             // 
             this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
-            this.minimizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.minimizeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.minimizeToolStripMenuItem.Text = "Minimize";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.closeToolStripMenuItem.Text = "Close";
+            // 
+            // processToolStripMenuItem
+            // 
+            this.processToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.runNewTaskToolStripMenuItem});
+            this.processToolStripMenuItem.Name = "processToolStripMenuItem";
+            this.processToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.processToolStripMenuItem.Text = "Process";
+            // 
+            // runNewTaskToolStripMenuItem
+            // 
+            this.runNewTaskToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
+            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.runNewTaskToolStripMenuItem.Text = "Run New Process";
+            // 
+            // toolToolStripMenuItem
+            // 
+            this.toolToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.toolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.performanceToolStripMenuItem});
+            this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.toolToolStripMenuItem.Text = "Tool";
+            // 
+            // performanceToolStripMenuItem
+            // 
+            this.performanceToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.performanceToolStripMenuItem.Name = "performanceToolStripMenuItem";
+            this.performanceToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.performanceToolStripMenuItem.Text = "Performance";
+            this.performanceToolStripMenuItem.Click += new System.EventHandler(this.performanceToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutTaskManagerToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutTaskManagerToolStripMenuItem
+            // 
+            this.aboutTaskManagerToolStripMenuItem.Name = "aboutTaskManagerToolStripMenuItem";
+            this.aboutTaskManagerToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.aboutTaskManagerToolStripMenuItem.Text = "About Task Manager";
+            this.aboutTaskManagerToolStripMenuItem.Click += new System.EventHandler(this.aboutTaskManagerToolStripMenuItem_Click);
             // 
             // TaskManagerForm
             // 
