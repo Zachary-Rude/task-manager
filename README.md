@@ -7,3 +7,8 @@ To download and install the latest version, visit https://download-task-manager.
 To download and install older versions, visit the Releases page, as the official website for downloading the program only allows you to download and install the latest version.
 
 Once you download the `.msi` file, open it to run the installer and install Task Manager on your computer. Follow the instructions in the installer so you can successfully install it.
+
+## **License**
+[GPLv3][1]
+
+  [1]: LICENSE.txt
