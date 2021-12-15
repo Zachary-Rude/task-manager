@@ -152,6 +152,7 @@
             this.endTaskButton.Name = "endTaskButton";
             this.endTaskButton.Size = new System.Drawing.Size(75, 23);
             this.endTaskButton.TabIndex = 0;
+            this.endTaskButton.TabStop = false;
             this.endTaskButton.Text = "End process";
             this.endTaskButton.UseVisualStyleBackColor = false;
             this.endTaskButton.Click += new System.EventHandler(this.endTaskButton_Click);
@@ -165,6 +166,7 @@
             this.reloadButton.Name = "reloadButton";
             this.reloadButton.Size = new System.Drawing.Size(75, 23);
             this.reloadButton.TabIndex = 2;
+            this.reloadButton.TabStop = false;
             this.reloadButton.Text = "Refresh";
             this.reloadButton.UseVisualStyleBackColor = false;
             this.reloadButton.Click += new System.EventHandler(this.reloadButton_Click);

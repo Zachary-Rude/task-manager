@@ -12,10 +12,10 @@
     <ROW Property="ARPPRODUCTICON" Value="icon.exe" Type="8"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="Zach, Inc."/>
-    <ROW Property="ProductCode" Value="1033:{F3D54E84-18CA-44DA-8D77-2925992CAC4F} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{42F8E345-81E1-43E7-B309-D310B6BDAB47} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Task Manager"/>
-    <ROW Property="ProductVersion" Value="1.0.9" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.1.0" Type="32"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{2D1D73E6-8B02-4272-A666-AB4DCB4B9B20}"/>
