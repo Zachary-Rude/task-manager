@@ -151,7 +151,7 @@
             this.endTaskButton.Location = new System.Drawing.Point(716, 501);
             this.endTaskButton.Name = "endTaskButton";
             this.endTaskButton.Size = new System.Drawing.Size(75, 23);
-            this.endTaskButton.TabIndex = 1;
+            this.endTaskButton.TabIndex = 0;
             this.endTaskButton.Text = "End process";
             this.endTaskButton.UseVisualStyleBackColor = false;
             this.endTaskButton.Click += new System.EventHandler(this.endTaskButton_Click);
