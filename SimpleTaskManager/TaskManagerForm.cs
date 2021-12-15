@@ -12,6 +12,7 @@ namespace SimpleTaskManager
         {
             InitializeComponent();
             GetProcess();
+            enableColorChangingToolStripMenuItem.Checked = Properties.Settings.Default.EnableColorChanging;
         }
 
         Process[] processes;
@@ -31,7 +32,7 @@ namespace SimpleTaskManager
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.PrivateMemorySize64.ToString() });
                 listView.Items.Add(newItem);
             }
-            if (enableColorchangingToolStripMenuItem.Checked)
+            if (Properties.Settings.Default.EnableColorChanging == true)
             {
                 changeColor();
             }
@@ -69,7 +70,12 @@ namespace SimpleTaskManager
                 if (p.Id == Int16.Parse(listView.SelectedItems[0].SubItems[1].Text))
                 {
                     index = processes.ToList().IndexOf(p);
+                    endTaskButton.Enabled = true;
                     break;
+                }
+                else
+                {
+                    endTaskButton.Enabled = false;
                 }
             }
             return processes[index];
@@ -153,6 +159,9 @@ namespace SimpleTaskManager
 
         private void enableColorchangingToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
+            enableColorChangingToolStripMenuItem.Checked = !enableColorChangingToolStripMenuItem.Checked;
+            Properties.Settings.Default.EnableColorChanging = enableColorChangingToolStripMenuItem.Checked;
+            Properties.Settings.Default.Save();
             GetProcess();
         }
 
@@ -180,6 +189,26 @@ namespace SimpleTaskManager
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             endTaskButton.PerformClick();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void maximizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void minimizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\bin\Debug\Task Manager.exe.config
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\bin\Debug\Task Manager.exe
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\bin\Debug\Task Manager.pdb
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.AboutForm.resources
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.PerfForm.resources
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.Properties.Resources.resources
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.RunNewTaskForm.resources
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.TaskManagerForm.resources
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.GenerateResource.cache
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.CoreCompileInputs.cache
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\Task Manager.exe
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\Task Manager.pdb
+C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csprojAssemblyReference.cache
