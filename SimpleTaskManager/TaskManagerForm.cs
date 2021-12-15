@@ -56,7 +56,7 @@ namespace SimpleTaskManager
             int i = 0;
             foreach (Process p in processes)
             {
-                if (i % 2 == 0) listView.Items[i].BackColor = Color.SkyBlue;
+                if (i % 2 == 0) listView.Items[i].BackColor = Color.FromArgb(205, 232, 255);
                 else listView.Items[i].BackColor = Color.White;
                 i++;
             }
