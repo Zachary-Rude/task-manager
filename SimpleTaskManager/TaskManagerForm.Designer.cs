@@ -203,6 +203,7 @@
             // 
             // enableColorChangingToolStripMenuItem
             // 
+            this.enableColorChangingToolStripMenuItem.Checked = true;
             this.enableColorChangingToolStripMenuItem.Index = 0;
             this.enableColorChangingToolStripMenuItem.Text = "Enable Color-Changing";
             this.enableColorChangingToolStripMenuItem.Click += new System.EventHandler(this.enableColorchangingToolStripMenuItem_CheckedChanged);
