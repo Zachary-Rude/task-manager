@@ -134,7 +134,7 @@
             this.tabPerformance.Controls.Add(this.tabDisk);
             this.tabPerformance.Controls.Add(this.tabInternet);
             this.tabPerformance.Location = new System.Drawing.Point(0, 10);
-            this.tabPerformance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPerformance.Margin = new System.Windows.Forms.Padding(2);
             this.tabPerformance.Name = "tabPerformance";
             this.tabPerformance.RightToLeftLayout = true;
             this.tabPerformance.SelectedIndex = 0;
@@ -153,9 +153,9 @@
             this.tabCPU.Controls.Add(this.labelCPU);
             this.tabCPU.Controls.Add(this.label1);
             this.tabCPU.Location = new System.Drawing.Point(4, 22);
-            this.tabCPU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCPU.Margin = new System.Windows.Forms.Padding(2);
             this.tabCPU.Name = "tabCPU";
-            this.tabCPU.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCPU.Padding = new System.Windows.Forms.Padding(2);
             this.tabCPU.Size = new System.Drawing.Size(569, 444);
             this.tabCPU.TabIndex = 0;
             this.tabCPU.Text = "  CPU";
@@ -168,7 +168,7 @@
             chartArea1.Name = "ChartArea1";
             this.chartCPU.ChartAreas.Add(chartArea1);
             this.chartCPU.Location = new System.Drawing.Point(13, 38);
-            this.chartCPU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartCPU.Margin = new System.Windows.Forms.Padding(2);
             this.chartCPU.Name = "chartCPU";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -272,9 +272,9 @@
             this.tabRAM.Controls.Add(this.label3);
             this.tabRAM.Controls.Add(this.chartRAM);
             this.tabRAM.Location = new System.Drawing.Point(4, 22);
-            this.tabRAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabRAM.Margin = new System.Windows.Forms.Padding(2);
             this.tabRAM.Name = "tabRAM";
-            this.tabRAM.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabRAM.Padding = new System.Windows.Forms.Padding(2);
             this.tabRAM.Size = new System.Drawing.Size(569, 444);
             this.tabRAM.TabIndex = 1;
             this.tabRAM.Text = "RAM";
@@ -432,7 +432,7 @@
             legend1.Name = "Legend1";
             this.chartRAM.Legends.Add(legend1);
             this.chartRAM.Location = new System.Drawing.Point(11, 40);
-            this.chartRAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartRAM.Margin = new System.Windows.Forms.Padding(2);
             this.chartRAM.Name = "chartRAM";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -456,9 +456,9 @@
             this.tabDisk.Controls.Add(this.chartDiskUse);
             this.tabDisk.Controls.Add(this.label5);
             this.tabDisk.Location = new System.Drawing.Point(4, 22);
-            this.tabDisk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDisk.Margin = new System.Windows.Forms.Padding(2);
             this.tabDisk.Name = "tabDisk";
-            this.tabDisk.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDisk.Padding = new System.Windows.Forms.Padding(2);
             this.tabDisk.Size = new System.Drawing.Size(569, 444);
             this.tabDisk.TabIndex = 2;
             this.tabDisk.Text = "Disk";
@@ -507,7 +507,7 @@
             legend2.Name = "Legend1";
             this.chartDiskRate.Legends.Add(legend2);
             this.chartDiskRate.Location = new System.Drawing.Point(13, 284);
-            this.chartDiskRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartDiskRate.Margin = new System.Windows.Forms.Padding(2);
             this.chartDiskRate.Name = "chartDiskRate";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -566,7 +566,7 @@
             legend3.Name = "Legend1";
             this.chartDiskUse.Legends.Add(legend3);
             this.chartDiskUse.Location = new System.Drawing.Point(13, 36);
-            this.chartDiskUse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartDiskUse.Margin = new System.Windows.Forms.Padding(2);
             this.chartDiskUse.Name = "chartDiskUse";
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -600,7 +600,7 @@
             this.tabInternet.Controls.Add(this.label15);
             this.tabInternet.Controls.Add(this.chartInternet);
             this.tabInternet.Location = new System.Drawing.Point(4, 22);
-            this.tabInternet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabInternet.Margin = new System.Windows.Forms.Padding(2);
             this.tabInternet.Name = "tabInternet";
             this.tabInternet.Size = new System.Drawing.Size(569, 444);
             this.tabInternet.TabIndex = 3;
@@ -691,7 +691,7 @@
             legend4.Name = "Legend1";
             this.chartInternet.Legends.Add(legend4);
             this.chartInternet.Location = new System.Drawing.Point(10, 39);
-            this.chartInternet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartInternet.Margin = new System.Windows.Forms.Padding(2);
             this.chartInternet.Name = "chartInternet";
             series6.ChartArea = "ChartArea1";
             series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -787,12 +787,13 @@
             this.ClientSize = new System.Drawing.Size(575, 490);
             this.Controls.Add(this.tabPerformance);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PerfForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Performance";
             this.Load += new System.EventHandler(this.perfForm_Load);
             this.tabPerformance.ResumeLayout(false);

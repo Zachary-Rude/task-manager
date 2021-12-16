@@ -63,6 +63,7 @@
             this.Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ProcessType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView = new System.Windows.Forms.ListView();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.rightClickMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -198,7 +199,8 @@
             // 
             this.menuItem3.Index = 1;
             this.menuItem3.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.enableColorChangingToolStripMenuItem});
+            this.enableColorChangingToolStripMenuItem,
+            this.menuItem7});
             this.menuItem3.Text = "View";
             // 
             // enableColorChangingToolStripMenuItem
@@ -319,6 +321,7 @@
             this.Status,
             this.ProcessType});
             this.listView.ContextMenuStrip = this.rightClickMenu;
+            this.listView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(0, 2);
             this.listView.Name = "listView";
@@ -329,6 +332,12 @@
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
             this.listView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
+            // 
+            // menuItem7
+            // 
+            this.menuItem7.Index = 1;
+            this.menuItem7.Text = "Change Font...";
+            this.menuItem7.Click += new System.EventHandler(this.menuItem7_Click);
             // 
             // TaskManagerForm
             // 
@@ -383,6 +392,7 @@
         private System.Windows.Forms.MenuItem performanceToolStripMenuItem;
         private System.Windows.Forms.MenuItem menuItem6;
         private System.Windows.Forms.MenuItem aboutTaskManagerToolStripMenuItem;
+        private System.Windows.Forms.MenuItem menuItem7;
     }
 }
 

@@ -34,5 +34,17 @@ namespace SimpleTaskManager.Properties {
                 this["EnableColorChanging"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI, 8.25pt")]
+        public global::System.Drawing.Font DefaultFont {
+            get {
+                return ((global::System.Drawing.Font)(this["DefaultFont"]));
+            }
+            set {
+                this["DefaultFont"] = value;
+            }
+        }
     }
 }

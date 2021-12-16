@@ -13,6 +13,7 @@ namespace SimpleTaskManager
             InitializeComponent();
             GetProcess();
             enableColorChangingToolStripMenuItem.Checked = Properties.Settings.Default.EnableColorChanging;
+            listView.Font = Properties.Settings.Default.DefaultFont;
         }
 
         Process[] processes;
@@ -32,7 +33,8 @@ namespace SimpleTaskManager
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.PrivateMemorySize64.ToString() });
                 listView.Items.Add(newItem);
             }
-            if (Properties.Settings.Default.EnableColorChanging == true)
+            listView.Font = Properties.Settings.Default.DefaultFont;
+            if (Properties.Settings.Default.EnableColorChanging)
             {
                 changeColor();
             }
@@ -209,6 +211,20 @@ namespace SimpleTaskManager
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void menuItem7_Click(object sender, EventArgs e)
+        {
+            using (FontDialog fd = new FontDialog())
+            {
+                fd.Font = Properties.Settings.Default.DefaultFont;
+                if (fd.ShowDialog() == DialogResult.OK)
+                {
+                    Properties.Settings.Default.DefaultFont = fd.Font;
+                    Properties.Settings.Default.Save();
+                    listView.Font = Properties.Settings.Default.DefaultFont;
+                }
+            }
         }
     }
 }
