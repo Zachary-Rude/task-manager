@@ -6,7 +6,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="DefaultFont" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">Segoe UI, 8.25pt</Value>
+      <Value Profile="(Default)">Microsoft Sans Serif, 8.25pt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

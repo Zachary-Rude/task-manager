@@ -10,4 +10,3 @@ C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManage
 C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.CoreCompileInputs.cache
 C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\Task Manager.exe
 C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\Task Manager.pdb
-C:\Users\zacha\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csprojAssemblyReference.cache

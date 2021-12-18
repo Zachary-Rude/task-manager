@@ -46,6 +46,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.enableColorChangingToolStripMenuItem = new System.Windows.Forms.MenuItem();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.menuItem5 = new System.Windows.Forms.MenuItem();
             this.maximizeToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.minimizeToolStripMenuItem = new System.Windows.Forms.MenuItem();
@@ -63,7 +64,6 @@
             this.Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ProcessType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView = new System.Windows.Forms.ListView();
-            this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.rightClickMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,7 +147,8 @@
             // 
             this.endTaskButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.endTaskButton.BackColor = System.Drawing.Color.DodgerBlue;
-            this.endTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.endTaskButton.FlatAppearance.BorderSize = 0;
+            this.endTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.endTaskButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.endTaskButton.Location = new System.Drawing.Point(716, 501);
             this.endTaskButton.Name = "endTaskButton";
@@ -162,6 +163,8 @@
             // 
             this.reloadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.reloadButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.reloadButton.FlatAppearance.BorderSize = 0;
+            this.reloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reloadButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.reloadButton.Location = new System.Drawing.Point(0, 501);
             this.reloadButton.Name = "reloadButton";
@@ -209,6 +212,12 @@
             this.enableColorChangingToolStripMenuItem.Index = 0;
             this.enableColorChangingToolStripMenuItem.Text = "Enable Color-Changing";
             this.enableColorChangingToolStripMenuItem.Click += new System.EventHandler(this.enableColorchangingToolStripMenuItem_CheckedChanged);
+            // 
+            // menuItem7
+            // 
+            this.menuItem7.Index = 1;
+            this.menuItem7.Text = "Change Font...";
+            this.menuItem7.Click += new System.EventHandler(this.menuItem7_Click);
             // 
             // menuItem5
             // 
@@ -285,7 +294,7 @@
             // 
             // ProcessName
             // 
-            this.ProcessName.Text = "Name";
+            this.ProcessName.Text = "Process";
             this.ProcessName.Width = 200;
             // 
             // ProcessID
@@ -321,7 +330,7 @@
             this.Status,
             this.ProcessType});
             this.listView.ContextMenuStrip = this.rightClickMenu;
-            this.listView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(0, 2);
             this.listView.Name = "listView";
@@ -332,12 +341,6 @@
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
             this.listView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
-            // 
-            // menuItem7
-            // 
-            this.menuItem7.Index = 1;
-            this.menuItem7.Text = "Change Font...";
-            this.menuItem7.Click += new System.EventHandler(this.menuItem7_Click);
             // 
             // TaskManagerForm
             // 
